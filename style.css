@@ -1,7 +1,8 @@
 body{
-  padding: 10px 40px;
+  padding: 0px 40px 0 120px;
   max-width: 100vw;
   max-height: 100vh;
+  margin: 0;
 }
 .contenedor_body{
   display: flex;
@@ -15,7 +16,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding: 0 70px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .sub_contenedor_header1{
   display: flex;
@@ -28,17 +29,32 @@ body{
   width: 200px;
 }
 .linkedin{
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 900;
   color: #0a66c2;
 }
 .icono_linkedin{
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   fill: red;
 }
+.ancla_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #2977c9;
+  color: #2977c9;
+  border-radius: 30px;
+  height: 40px;
+  text-decoration:none;
+}
 .texto_principal{
-  font-size: 56px;
+  font-size: 58px;
+  font-weight: 200;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color:#8f5849;
 }
 .contenedor_inputs{
   display: flex;
@@ -57,10 +73,17 @@ body{
   padding: 0 10px;
   outline: none;
 }
+.politicas_y_condiciones{
+  font-weight: 600;
+}
 .boton_aceptar{
   border-radius: 30px;
   height: 50px;
   width: 100%;
+  background-color: #2977c9;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
 }
 .separador{
   margin: 10px 0;
@@ -82,14 +105,16 @@ body{
   flex-grow: 1;
   content:"";
 }
-.ancla{
+.ancla_body{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #2977c9;
   border-radius: 30px;
   height: 50px;
+  text-decoration:none;
+  color: rgba(0,0,0,0.8);
 }
 .imagen_svg{
   width: 700px;
@@ -101,5 +126,5 @@ body{
   margin-left:10px;
 }
 .pr_45{
-  padding-right:45%;
+  padding-right:35%;
 }

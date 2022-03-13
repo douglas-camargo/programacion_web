@@ -1,0 +1,65 @@
+.contenedor_principal_login{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.sub_contenedor_principal_login{
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  width: 300px;
+  padding: 24px;
+  border-radius: 8px;
+}
+.sub_contenedor_header{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
+.linkedin{
+  font-size: 30px;
+  font-weight: 900;
+  color: #0a66c2;
+}
+.icono_linkedin{
+  width: 30px;
+  height: 30px;
+  fill: red;
+}
+.titulo{
+  margin: 0;
+  padding-bottom: 4px;
+  font-size: 32px;
+}
+.sub_titulo{
+  margin: 0;
+  font-size: 15px;
+}
+.contenedor_inputs_login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.inputs_login{
+  height: 52px;
+  margin: 20px 0;
+}
+.boton_iniciar_sesion{
+  border-radius: 30px;
+  height: 50px;
+  width: 100%;
+  background-color: #2977c9;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+.volver_al_registro{
+  margin-top: 32px;
+  font-size: 18px;
+}
+.ancla_login{
+  text-decoration:none;
+}

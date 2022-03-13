@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inicioSecion.css">
   <title>Iniciar sesión</title>
 </head>
 <body>
-  <h1>Login</h1>
+  <div class="contenedor_principal_login">
+    <div class="sub_contenedor_header">
+      <p class="linkedin">Linked</p>
+      <img src="./linkedin.svg" alt="" class="icono_linkedin">
+    </div>
+    <div class="sub_contenedor_principal_login">
+      <h1 class="titulo">Iniciar sesión</h1>
+      <p class="sub_titulo">Mantente al día de tu mundo profesional</p>
+      <form action="" class="">
+        <div class="contenedor_inputs_login">
+          <input type="email" class="inputs_login" name="correo" id="correo_electronico" placeholder="Correo" required>
+          <input type="password" class="inputs_login" id="password" placeholder="Contraseña" autocomplete="off" autocapitalize="off" autocorrect="off" required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$">
+        </div>
+        <button class="boton_iniciar_sesion">Aceptar y unirse</button>
+      </form>
+    </div>
+    <div class="volver_al_registro">¿Estás empezando a usar LinkedIn? <a href="index.html" class="ancla_login">Unirse ahora</a></div>
+  </div>
 </body>
 </html>
