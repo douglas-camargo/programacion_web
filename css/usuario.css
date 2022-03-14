@@ -1,0 +1,13 @@
+.contendor_usuario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.cerrar_sesion{
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
