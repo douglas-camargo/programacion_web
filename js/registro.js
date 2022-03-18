@@ -18,6 +18,8 @@ form.addEventListener("submit", e=>{
   e.preventDefault()
   if(contraseña.value !== "" && contraseña.value.length > 4 && esEmailValido(correo.value)){
     location.href = "html/inicioSesion.html"
+    alert("Te ha registrado con éxito.")
+    form.reset()
   }else{
     alert("No cumple con los requisitos para registrarse.")
   }

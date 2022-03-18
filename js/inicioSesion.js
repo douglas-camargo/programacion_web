@@ -1,6 +1,6 @@
 const correo = document.getElementById("correo_login")
 const contraseña = document.getElementById("password")
-const form = document.getElementById("formularioInicioSesion")
+const formulario = document.getElementById("formularioInicioSesion")
 const textoErrorCorreo = document.getElementById("advertenciaCorreo")
 const textoErrorPass = document.getElementById("advertenciaContraseña")
 const botonInicioSesion = document.getElementById("botonIniciarSesion")
@@ -14,16 +14,17 @@ let advertenciaPasswordLogin = ""
 textoErrorCorreo.innerHTML = ""
 textoErrorPass.innerHTML = ""
 
-form.addEventListener("submit", e=>{
+formulario.addEventListener("submit", e=>{
   e.preventDefault()
   if(contraseña.value !== "" && contraseña.value.length > 4 && esEmailValido(correo.value)){
     location.href = "usuario.html"
+    formulario.reset()
   }else{
     alert("Autenticación incorrecta.")
   }
 });
 
-form.addEventListener("keyup", ()=>{
+formulario.addEventListener("keyup", ()=>{
     if(contraseña.value === "" || contraseña.value.length < 5 || !esEmailValido(correo.value)){
       botonInicioSesion.disabled = true;
     }else{
@@ -31,7 +32,7 @@ form.addEventListener("keyup", ()=>{
   }
 });
 
-form.addEventListener("change", ()=>{
+formulario.addEventListener("change", ()=>{
   if (correo.name === "correo_login") {
     if(correo.value.length > 0 && !esEmailValido(correo.value)){
       advertenciaCorreoLogin = `El correo no es valido. <br>`
