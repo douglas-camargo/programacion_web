@@ -60,7 +60,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 125px;
+  height: 140px;
   width: 100%;
 }
 .inputs{
@@ -84,6 +84,9 @@ body{
   border: none;
   color: #FFF;
   cursor: pointer;
+}
+.boton_aceptar:disabled{
+  opacity: .4;
 }
 .separador{
   margin: 10px 0;
@@ -127,4 +130,9 @@ body{
 }
 .pr_45{
   padding-right:35%;
+}
+
+.advertencia{
+  font-size: 14px;
+  color: #f4913a;
 }

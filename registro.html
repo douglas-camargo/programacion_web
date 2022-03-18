@@ -23,14 +23,16 @@
       <div class="sub_contenedor_body">
         <p class="texto_principal">¡Te damos la bienvenida a tu comunidad profesional!</p>
         <div class="pr_45">
-          <form action="">
+          <form action="" id="formulario_registro">
             <div class="contenedor_inputs">
               <input type="email" class="inputs" name="correo_registro" id="correo_registro" placeholder="Correo">
+              <span class="advertencia" id="advertenciaEmail"></span>
               <input type="password" class="inputs" name="contrasena" id="contrasena" placeholder="Contraseña" autocomplete="off" autocapitalize="off" autocorrect="off">
+              <span class="advertencia" id="advertenciaPassword"></span>
             </div>
+            <p class="politicas_y_condiciones">Al hacer clic en «Aceptar y unirse», aceptas las Condiciones de uso, la Política de privacidad y la Política de cookies de LinkedIn.</p>
+            <button type="submit" class="boton_aceptar" id="boton_registrar" disabled>Aceptar y unirse</button>
           </form>
-          <p class="politicas_y_condiciones">Al hacer clic en «Aceptar y unirse», aceptas las Condiciones de uso, la Política de privacidad y la Política de cookies de LinkedIn.</p>
-          <button class="boton_aceptar">Aceptar y unirse</button>
           <div class="separador"><span class="mx_10">o</span></div>
           <div>
             <a href="html/inicioSesion.html" class="ancla_body"><span>¿Ya estás LinkedIn? Inicia sesión</span></a>
@@ -41,5 +43,6 @@
     <img src="img/imagen_1.svg" alt="" class="imagen_svg">
   </div>
 
+  <script src="js/registro.js"></script>
 </body>
 </html>
