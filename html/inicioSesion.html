@@ -16,15 +16,19 @@
     <div class="sub_contenedor_principal_login">
       <h1 class="titulo">Iniciar sesión</h1>
       <p class="sub_titulo">Mantente al día de tu mundo profesional</p>
-      <form action="" class="">
+      <form id="formularioInicioSesion" class="">
         <div class="contenedor_inputs_login">
           <input type="text" class="inputs_login" name="correo_login" id="correo_login" placeholder="Correo">
+          <span class="advertencia_inicio_sesion" id="advertenciaCorreo"></span>
           <input type="password" class="inputs_login" name="password" id="password" placeholder="Contraseña" autocomplete="off" autocapitalize="off" autocorrect="off">
+          <span class="advertencia_inicio_sesion" id="advertenciaContraseña"></span>
         </div>
-        <button class="boton_iniciar_sesion">Aceptar y unirse</button>
+        <button id="botonIniciarSesion" class="boton_iniciar_sesion" disabled>Aceptar y unirse</button>
       </form>
     </div>
     <div class="volver_al_registro">¿Estás empezando a usar LinkedIn? <a href="/registro.html" class="ancla_login">Unirse ahora</a></div>
   </div>
+
+  <script src="/js/inicioSesion.js"></script>
 </body>
 </html>

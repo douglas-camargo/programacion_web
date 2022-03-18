@@ -56,6 +56,9 @@
   color: #FFF;
   cursor: pointer;
 }
+.boton_iniciar_sesion:disabled{
+  opacity: .4;
+}
 .volver_al_registro{
   margin-top: 32px;
   font-size: 18px;
