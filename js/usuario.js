@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
-import { getAuth, signOut  } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
+import { getAuth, signOut, onAuthStateChanged  } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -26,3 +26,19 @@ botonCerrarSesion.addEventListener("click", () =>{
     console.log(error);
   });
 });
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    console.log(uid);
+    console.log("signin");
+  } else {
+    console.log("signout");
+    location.replace("inicioSesion.html")
+  }
+});
+
+
+window.addEventListener('haschange', function(){
+  console.log('location changed!');
+})

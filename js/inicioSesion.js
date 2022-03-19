@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -54,33 +54,6 @@ formulario.addEventListener("submit", e=>{
   }
 });
 
-let {pathname} = location
-
-const p = () => {
-pathname === "/html/usuario.html"
-}
-
-p()
-
-// console.log(pathname);
-// if (pathname === "/html/inicioSesion.html") {
-// }
-const tokenSession = sessionStorage.getItem("token") === null ? sessionStorage.getItem("token") : desencriptar(sessionStorage.getItem("token"));
-
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    const uid = user.uid;
-    console.log(uid);
-    console.log("signin");
-    // ...
-  } else {
-    console.log("signout");
-    // ...
-  }
-});
-window.addEventListener('haschange', function(){
-  console.log('location changed!');
-})
 formulario.addEventListener("keyup", ()=>{
     if(contraseña.value === "" || contraseña.value.length < 6 || !esEmailValido(correo.value)){
       botonInicioSesion.disabled = true;
