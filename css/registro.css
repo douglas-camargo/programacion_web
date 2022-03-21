@@ -12,6 +12,7 @@
 .contenedor_header{
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 .sub_contenedor_header1{
   display: flex;
@@ -73,7 +74,7 @@
 }
 .politicas_y_condiciones{
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
 }
 .boton_aceptar{
   border-radius: 30px;
