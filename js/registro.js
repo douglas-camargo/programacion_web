@@ -36,19 +36,13 @@ form.addEventListener("submit", e=> {
   e.preventDefault()
   if(contraseña.value !== "" && contraseña.value.length > 5 && esEmailValido(correo.value)){
     createUserWithEmailAndPassword(auth, correo.value, contraseña.value)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log(user)
+    .then(() => {
       form.reset()
       alert("Te ha registrado con éxito.")
       location.href = "html/inicioSesion.html"
     })
-    .catch((error) => {
+    .catch(() => {
       alert("No cumple con los requisitos para registrarse.")
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode)
-      console.log(errorMessage)
       form.reset()
     });
   }

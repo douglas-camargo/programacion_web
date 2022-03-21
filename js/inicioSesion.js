@@ -36,19 +36,13 @@ formulario.addEventListener("submit", e=>{
   e.preventDefault()
   if(contraseña.value !== "" && contraseña.value.length > 5 && esEmailValido(correo.value)){
     signInWithEmailAndPassword(auth, correo.value, contraseña.value)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log(user)
+    .then(() => {
       formulario.reset()
       alert("Has ingresado con éxito.")
       location.href = "usuario.html"
     })
     .catch((error) => {
       alert("Autenticación incorrecta.")
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode)
-      console.log(errorMessage)
       formulario.reset()
     });
   }
