@@ -1,21 +1,18 @@
-body{
-  padding: 10px 40px 10px 120px;
+.body_registro{
+  padding: 10px 40px 10px 200px;
   max-width: 100vw;
   max-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #F6F6F6;
 }
 .contenedor_body{
   display: flex;
   justify-content: space-around;
 }
-.sub_contenedor_body{
-  padding: 0 10%;
-}
 .contenedor_header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 70px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .sub_contenedor_header1{
   display: flex;
@@ -51,17 +48,16 @@ body{
 .texto_principal{
   font-size: 58px;
   font-weight: 200;
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 15px;
   color:#8f5849;
-  line-height: 80px;
+  line-height: 70px;
 }
 .contenedor_inputs{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 140px;
-  width: 100%;
 }
 .inputs{
   font-size: 18px;
@@ -73,8 +69,13 @@ body{
   padding: 0 10px;
   outline: none;
 }
+.advertencia{
+  font-size: 12px;
+}
 .politicas_y_condiciones{
   font-weight: 600;
+  font-size: 13px;
+  color: #707070;
 }
 .boton_aceptar{
   border-radius: 30px;
@@ -131,6 +132,64 @@ body{
   margin-right: 10px;
   margin-left:10px;
 }
-.pr_45{
-  padding-right:35%;
+
+@media (max-width: 575.98px) {
+  .imagen_svg{
+    margin-top: 30px;
+  }
+  .body_registro{
+    padding: 40px;
+  }
+  .contendor_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .imagen_svg{
+    margin-top: 30px;
+  }
+  .body_registro{
+    padding: 40px;
+  }
+  .contendor_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .imagen_svg{
+    margin-top: 30px;
+  }
+  .body_registro{
+    padding: 40px;
+  }
+  .contendor_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contendor_formulario{
+    width: 400px !important;
+  }
+  .texto_principal{
+    width: 590px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contendor_formulario{
+    width: 400px !important;
+  }
+  .texto_principal{
+    width: 590px !important;
+  }
+}
+
