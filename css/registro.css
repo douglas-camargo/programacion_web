@@ -177,11 +177,17 @@
   .contendor_formulario{
     width: 400px !important;
   }
+  .texto_principal{
+    width: 590px !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .contendor_formulario{
     width: 400px !important;
+  }
+  .texto_principal{
+    width: 590px !important;
   }
 }
 
