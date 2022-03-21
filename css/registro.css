@@ -1,7 +1,9 @@
-body{
+.body_registro{
   padding: 10px 40px 10px 120px;
   max-width: 100vw;
   max-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #F6F6F6;
 }
 .contenedor_body{
   display: flex;
@@ -134,3 +136,14 @@ body{
 .pr_45{
   padding-right:35%;
 }
+
+/* @media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {} */
+
+/* @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {} */
+

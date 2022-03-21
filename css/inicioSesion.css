@@ -1,3 +1,6 @@
+.body_login{
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 .contenedor_principal_login{
   width: 100%;
   display: flex;
