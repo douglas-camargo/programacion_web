@@ -21,7 +21,7 @@ const botonCerrarSesion = document.getElementById("cerrarSesion")
 botonCerrarSesion.addEventListener("click", () =>{
   signOut(auth).then(() => {
     console.log("se ha cerrado sesión");
-    location.replace("../registro.html")
+    location.replace("../index.html")
   }).catch((error) => {
     console.log(error);
   });
