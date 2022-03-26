@@ -20,25 +20,14 @@ const botonCerrarSesion = document.getElementById("cerrarSesion")
 
 botonCerrarSesion.addEventListener("click", () =>{
   signOut(auth).then(() => {
-    console.log("se ha cerrado sesión");
     location.replace("../index.html")
-  }).catch((error) => {
-    console.log(error);
+  }).catch(() => {
+    alert("intente cerrar sesión de nuevo por favor");
   });
 });
 
 onAuthStateChanged(auth, (user) => {
-  if (user) {
-    const uid = user.uid;
-    console.log(uid);
-    console.log("signin");
-  } else {
-    console.log("signout");
+  if (!user) {
     location.replace("inicioSesion.html")
-  }
+  } 
 });
-
-
-window.addEventListener('haschange', function(){
-  console.log('location changed!');
-})
