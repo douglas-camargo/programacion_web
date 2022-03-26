@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
+  min-width: 200px;
 }
 .linkedin{
   font-size: 30px;
